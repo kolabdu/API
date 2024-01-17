@@ -5,7 +5,7 @@ Determined to overcome this challenge, I turned to YouTube for guidance. A speci
 
 Undeterred, my quest led me to another YouTube channel called "Growing Scientist," where I discovered a video titled "Download Historical Weather Data for Free Without Using API." This innovative approach proved to be the solution I needed, successfully completing the task at hand.
 
-![Alt text](paste_the_copied_image_url_here)
+![Alt text](https://github.com/kolabdu/API/blob/main/Capture.PNG)
 
 
 
