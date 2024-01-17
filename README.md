@@ -13,12 +13,20 @@ Undeterred, my quest led me to another YouTube channel called "Growing Scientist
 
 my code
 
+import datetime as dt
 import requests
 
 API_KEY = "fc179f8a20e64f8a883173714241001"
 CITY = "Lagos"
-BASE_URL = f"https://lnkd.in/dBKfcJFu"
+DATE = "2023-01-05"
 
-response = requests.get(BASE_URL).json()
+BASE_URL = f"http://api.weatherapi.com/v1/history.json?key={API_KEY}&q={CITY}&dt={DATE}"
 
-print(response)
+response = requests.get(BASE_URL)
+
+if response.status_code == 200:
+    weather_data = response.json()
+    print(weather_data)
+else:
+    print(f"Failed to retrieve data. Status code: {response.status_code}")
+
